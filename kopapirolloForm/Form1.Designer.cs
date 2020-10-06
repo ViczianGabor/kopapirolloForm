@@ -90,6 +90,7 @@
             this.pbjatekos.Location = new System.Drawing.Point(11, 74);
             this.pbjatekos.Name = "pbjatekos";
             this.pbjatekos.Size = new System.Drawing.Size(200, 200);
+            this.pbjatekos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbjatekos.TabIndex = 4;
             this.pbjatekos.TabStop = false;
             // 
@@ -98,9 +99,9 @@
             this.pbszamitogep.Location = new System.Drawing.Point(268, 74);
             this.pbszamitogep.Name = "pbszamitogep";
             this.pbszamitogep.Size = new System.Drawing.Size(200, 200);
+            this.pbszamitogep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbszamitogep.TabIndex = 5;
             this.pbszamitogep.TabStop = false;
-            this.pbszamitogep.Click += new System.EventHandler(this.pbszamitogep_Click);
             // 
             // lblgyoztes
             // 
@@ -119,51 +120,57 @@
             this.btnko.TabIndex = 7;
             this.btnko.Text = "Kő";
             this.btnko.UseVisualStyleBackColor = true;
+            this.btnko.Click += new System.EventHandler(this.btnko_Click);
             // 
             // btnpapir
             // 
-            this.btnpapir.Location = new System.Drawing.Point(211, 15);
+            this.btnpapir.Location = new System.Drawing.Point(234, 15);
             this.btnpapir.Name = "btnpapir";
             this.btnpapir.Size = new System.Drawing.Size(75, 23);
             this.btnpapir.TabIndex = 8;
             this.btnpapir.Text = "papír";
             this.btnpapir.UseVisualStyleBackColor = true;
+            this.btnpapir.Click += new System.EventHandler(this.btnpapir_Click);
             // 
             // btnollo
             // 
-            this.btnollo.Location = new System.Drawing.Point(441, 15);
+            this.btnollo.Location = new System.Drawing.Point(440, 15);
             this.btnollo.Name = "btnollo";
             this.btnollo.Size = new System.Drawing.Size(75, 23);
             this.btnollo.TabIndex = 9;
             this.btnollo.Text = "olló";
             this.btnollo.UseVisualStyleBackColor = true;
+            this.btnollo.Click += new System.EventHandler(this.btnollo_Click);
             // 
             // btnkilepes
             // 
-            this.btnkilepes.Location = new System.Drawing.Point(23, 426);
+            this.btnkilepes.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnkilepes.Location = new System.Drawing.Point(32, 418);
             this.btnkilepes.Name = "btnkilepes";
-            this.btnkilepes.Size = new System.Drawing.Size(75, 23);
+            this.btnkilepes.Size = new System.Drawing.Size(119, 31);
             this.btnkilepes.TabIndex = 10;
             this.btnkilepes.Text = "Kilépés";
             this.btnkilepes.UseVisualStyleBackColor = true;
+            this.btnkilepes.Click += new System.EventHandler(this.btnkilepes_Click);
             // 
             // btnszabaly
             // 
-            this.btnszabaly.Location = new System.Drawing.Point(224, 426);
+            this.btnszabaly.Location = new System.Drawing.Point(224, 418);
             this.btnszabaly.Name = "btnszabaly";
-            this.btnszabaly.Size = new System.Drawing.Size(75, 23);
+            this.btnszabaly.Size = new System.Drawing.Size(114, 31);
             this.btnszabaly.TabIndex = 11;
             this.btnszabaly.Text = "Szabályok";
             this.btnszabaly.UseVisualStyleBackColor = true;
             // 
             // btnujjatek
             // 
-            this.btnujjatek.Location = new System.Drawing.Point(454, 426);
+            this.btnujjatek.Location = new System.Drawing.Point(440, 418);
             this.btnujjatek.Name = "btnujjatek";
-            this.btnujjatek.Size = new System.Drawing.Size(75, 23);
+            this.btnujjatek.Size = new System.Drawing.Size(100, 31);
             this.btnujjatek.TabIndex = 12;
             this.btnujjatek.Text = "Új játék";
             this.btnujjatek.UseVisualStyleBackColor = true;
+            this.btnujjatek.Click += new System.EventHandler(this.btnujjatek_Click);
             // 
             // panel1
             // 
@@ -196,6 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnkilepes;
             this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
